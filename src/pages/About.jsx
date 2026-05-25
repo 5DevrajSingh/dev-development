@@ -155,7 +155,7 @@ const About = () => {
 
         {/* Skills Section */}
         <div className="mt-20">
-          <h3 className="text-3xl font-bold text-center mb-10">
+          <h3 className="text-3xl font-bold text-center text-[#fa8816] mb-10">
             Technical Skills
           </h3>
 
