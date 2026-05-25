@@ -1,4 +1,4 @@
-import hero from "../assets/hero_img.webp";
+import hero from "../assets/home1.jpg";
 import { Link, useNavigate } from "react-router-dom";
 function Hero() {
   const navigate  = useNavigate()

@@ -51,7 +51,7 @@ const Projects = () => {
       className="w-full bg-white py-16 lg:py-24 px-5 lg:px-20"
     >
       <div className="max-w-7xl mx-auto">
-        <h2 className="text-4xl font-bold text-center mb-4">
+        <h2 className="text-4xl font-bold text-[#fa8816] text-center mb-4">
           My Projects
         </h2>
 
