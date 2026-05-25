@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-4xl lg:text-5xl text-[#fa8816] font-bold text-gray-900">
             Contact Me
           </h2>
 
@@ -26,7 +26,7 @@ const Contact = () => {
         <div className="grid lg:grid-cols-2 gap-10">
           {/* Contact Info */}
           <div className="bg-white rounded-2xl shadow-lg p-8">
-            <h3 className="text-2xl font-bold mb-8 text-[#FF9933]">
+            <h3 className="text-2xl text-[#fa8816] font-bold mb-8 text-[#FF9933]">
               Get In Touch
             </h3>
 
