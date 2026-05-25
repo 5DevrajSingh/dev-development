@@ -1,4 +1,4 @@
-import hero from "../assets/home1.jpg";
+import hero from "../assets/home2.jpg";
 import { Link, useNavigate } from "react-router-dom";
 function Hero() {
   const navigate  = useNavigate()
