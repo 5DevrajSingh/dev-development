@@ -20,7 +20,7 @@ const About = () => {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side */}
           <div>
-            <h2 className="text-4xl text-[#fa8816] lg:text-6xl font-bold text-gray-900 mb-8">
+            <h2 className="text-4xl text-[#fa8816] lg:text-6xl font-bold mb-8">
               About Me
             </h2>
 

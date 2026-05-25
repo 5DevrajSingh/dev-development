@@ -39,7 +39,7 @@ const Service = () => {
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
         <div className="text-center mb-14">
-          <h2 className="text-4xl lg:text-5xl font-bold text-gray-900">
+          <h2 className="text-4xl lg:text-5xl font-bold text-[#fa8816]">
             My Services
           </h2>
 
