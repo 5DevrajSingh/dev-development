@@ -30,10 +30,10 @@ function App() {
     <Fab
           variant="extended" // 1. Circle से Extended शेप में बदलने के लिए
           aria-label="download resume"
-          onClick={handleDownload}
+          // onClick={handleDownload}
           sx={{
             position: "fixed",
-            bottom: 20,
+            bottom: 10,
             right: 20,
             backgroundColor: "#FF9933", // भगवा रंग
             color: "#FFFFFF", // सफेद टेक्स्ट और आइकॉन

@@ -26,7 +26,7 @@ function Navbar() {
       className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isHomePage
         ? scrolled
           ? "bg-black/40  border-b border-white/10 shadow-lg text-white"
-          : "bg-transparent text-white"
+          : "bg-black/40 text-white"
         : "bg-black/30 shadow-md text-white"
         //   ? "bg-black/30 backdrop-blur-md shadow-md text-white"
         //   : "bg-transparent text-white"
