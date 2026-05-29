@@ -9,7 +9,8 @@ import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-
+import { Fab } from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
 
 function App() {
   
@@ -26,6 +27,26 @@ function App() {
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
     </Routes>
+    <Fab
+          variant="extended" // 1. Circle से Extended शेप में बदलने के लिए
+          aria-label="download resume"
+          onClick={handleDownload}
+          sx={{
+            position: "fixed",
+            bottom: 20,
+            right: 20,
+            backgroundColor: "#FF9933", // भगवा रंग
+            color: "#FFFFFF", // सफेद टेक्स्ट और आइकॉन
+            textTransform: "none", // "Resume" को ऑल-कैप्स (RESUME) होने से रोकने के लिए
+            gap: 1, // आइकॉन और टेक्स्ट के बीच स्पेस के लिए
+            "&:hover": {
+              backgroundColor: "#CC7A24",
+            },
+          }}
+        >
+          <DownloadIcon />
+          DevResume
+        </Fab>
     </div>
     <Footer/>
     </BrowserRouter>
