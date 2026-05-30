@@ -161,6 +161,11 @@ const About = () => {
 
           <div className="flex flex-wrap justify-center gap-4">
             {[
+              "Android",
+              
+              "Java",
+              "Kotlin",
+              "XML",
               "Flutter",
               "Dart",
               "React.js",

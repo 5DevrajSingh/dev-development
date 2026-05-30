@@ -14,7 +14,16 @@ import DownloadIcon from "@mui/icons-material/Download";
 
 function App() {
   
+const handleDownload = () => {
+  const fileUrl = `${import.meta.env.BASE_URL}Devraj-Resume.pdf`;
 
+  const link = document.createElement("a");
+  link.href = fileUrl;
+  link.download = "Devraj-Resume.pdf";
+  document.body.appendChild(link);
+  link.click();
+  document.body.removeChild(link);
+};
   return (
     <BrowserRouter>
     <ScrollToTop/>
@@ -30,7 +39,7 @@ function App() {
     <Fab
           variant="extended" // 1. Circle से Extended शेप में बदलने के लिए
           aria-label="download resume"
-          // onClick={handleDownload}
+          onClick={handleDownload}
           sx={{
             position: "fixed",
             bottom: 10,
