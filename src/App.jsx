@@ -11,8 +11,17 @@ import Contact from "./pages/Contact"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Fab } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
-
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 function App() {
+
+  useEffect(() => {
+      AOS.init({
+        duration: 1000,
+        once: true
+      });
+     }, []);
   
 const handleDownload = () => {
   const fileUrl = `${import.meta.env.BASE_URL}Devraj-Resume.pdf`;
@@ -37,6 +46,7 @@ const handleDownload = () => {
       <Route path="/contact" element={<Contact/>}/>
     </Routes>
     <Fab
+          data-aos="slide-left"
           variant="extended" // 1. Circle से Extended शेप में बदलने के लिए
           aria-label="download resume"
           onClick={handleDownload}

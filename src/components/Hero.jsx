@@ -1,8 +1,20 @@
 import hero from "../assets/home2.jpg";
 import profileImage from "../assets/dev3.jpeg"
-import { Link, useNavigate } from "react-router-dom";
+import {  Link, useNavigate } from "react-router-dom";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
 function Hero() {
   const navigate  = useNavigate()
+   useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: false,
+      mirror: true
+    });
+   }, []);
   return (
     <>
       {/* HERO SECTION */}
@@ -35,7 +47,7 @@ function Hero() {
           className="relative z-20 flex flex-col items-start justify-center text-left px-4 sm:pl-12 md:pl-20 h-screen"
           data-aos="fade-up"
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white leading-tight" data-aos="fade-up">
             Devraj Singh,
             <br />
             Full Stack Developer
@@ -49,6 +61,7 @@ function Hero() {
           </p>
 
           <button 
+          data-aos="slide-right"
           onClick={() => navigate(`/projects`)}
           className="mt-8 bg-[#616060] hover:bg-[#FF9933] transition-all duration-300 px-8 py-4 rounded-[10px] text-white text-lg">
             View My Work
@@ -62,35 +75,3 @@ function Hero() {
 }
 
 export default Hero;
-
-
-/*{
-
-      <section className="relative z-30  px-5 lg:px-20">
-        <div className="bg-white text-center max-w-6xl mx-auto">
-      
-          <p className="mt-10 lg:mt-15 uppercase tracking-[6px] text-gray-500 text-sm">
-            Latest Launch
-          </p>
-
-        
-          <h2 className="text-2xl lg:text-4xl font-bold mt-5 text-black">
-            Dev Development
-          </h2>
-
-         
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-5 mt-5 lg:mt-10 mb-10 lg:mb-15">
-            <button className="bg-[#FF9933] hover:bg-black text-white px-8 py-4  transition-all duration-300">
-              DISCOVER
-            </button>
-
-            <Link
-              to="/contact-us"
-              className="border border-black hover:bg-black hover:text-white text-black px-8 py-4 transition-all duration-300 inline-block"
-            >
-              CONTACT US
-            </Link>
-          </div>
-        </div>
-      </section>
-}*/
