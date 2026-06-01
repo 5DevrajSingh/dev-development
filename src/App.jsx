@@ -46,7 +46,7 @@ const handleDownload = () => {
       <Route path="/contact" element={<Contact/>}/>
     </Routes>
     <Fab
-          data-aos="slide-left"
+          data-aos="fade-up-left"
           variant="extended" // 1. Circle से Extended शेप में बदलने के लिए
           aria-label="download resume"
           onClick={handleDownload}
