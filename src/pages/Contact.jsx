@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "../firebase";
 import {
   FaEnvelope,
   FaPhoneAlt,
@@ -8,6 +10,49 @@ import {
 } from "react-icons/fa";
 
 const Contact = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      setLoading(true);
+
+      await addDoc(collection(db, "contacts"), {
+        ...formData,
+        createdAt: serverTimestamp(),
+      });
+
+      alert("Message sent successfully!");
+
+      setFormData({
+        name: "",
+        email: "",
+        subject: "",
+        message: "",
+      });
+    } catch (error) {
+      console.error("Error saving contact:", error);
+      alert("Failed to send message");
+    } finally {
+      setLoading(false);
+    }
+  };
+
   return (
     <section className="w-full bg-gray-50 py-16 lg:py-24 px-5 lg:px-20">
       <div className="max-w-7xl mx-auto">
@@ -63,8 +108,8 @@ const Contact = () => {
               </h4>
 
               <p className="text-gray-600">
-                Discuss your project requirements and get expert guidance
-                before starting development.
+                Discuss your project requirements and get expert guidance before
+                starting development.
               </p>
             </div>
           </div>
@@ -75,8 +120,52 @@ const Contact = () => {
               Send Message
             </h3>
 
-            <form className="space-y-5">
+            <form className="space-y-5" onSubmit={handleSubmit}>
               <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Your Name"
+                className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
+              />
+
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                placeholder="Your Email"
+                className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
+              />
+
+              <input
+                type="text"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
+              />
+
+              <textarea
+                rows="6"
+                name="message"
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Your Message"
+                className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
+              ></textarea>
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-[#FF9933] hover:bg-orange-600 text-white px-8 py-4 rounded-lg transition-all duration-300"
+              >
+                {loading ? "Sending..." : "Send Message"}
+              </button>
+
+              {/* <input
                 type="text"
                 placeholder="Your Name"
                 className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
@@ -98,14 +187,14 @@ const Contact = () => {
                 rows="6"
                 placeholder="Your Message"
                 className="w-full border border-gray-300 rounded-lg p-4 outline-none focus:border-[#FF9933]"
-              ></textarea>
+              ></textarea> */}
 
-              <button
+              {/* <button
                 type="submit"
                 className="bg-[#FF9933] hover:bg-orange-600 text-white px-8 py-4 rounded-lg transition-all duration-300"
               >
                 Send Message
-              </button>
+              </button> */}
             </form>
           </div>
         </div>

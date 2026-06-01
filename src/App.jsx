@@ -8,6 +8,7 @@ import Service from "./pages/Service"
 import About from "./pages/About"
 import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
+import UploadProject from "./pages/UploadProject"
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Fab } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
@@ -44,6 +45,7 @@ const handleDownload = () => {
       <Route path="/service" element={<Service/>}/>
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path="/upload-project" element={<UploadProject/>}/>
     </Routes>
     <Fab
           data-aos="fade-up-left"
