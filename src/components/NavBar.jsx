@@ -95,7 +95,7 @@ function Navbar() {
               href="https://wa.me/9027208460"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#24a052] px-6 py-3 flex items-center gap-2 text-white uppercase tracking-widest text-sm hover:opacity-90 transition-all duration-300"
+              className="bg-[#fa8816] px-6 py-3 flex items-center gap-2 text-white uppercase tracking-widest text-sm hover:opacity-90 transition-all duration-300"
             >
               <FaWhatsapp size={20} />
               <span className="hidden lg:block">WhatsApp</span>
@@ -131,7 +131,7 @@ function Navbar() {
               href="https://wa.me/9027208460"
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-[#24a052]   p-2 rounded-full flex items-center justify-center text-white"
+              className="bg-[#fa8816]   p-2 rounded-full flex items-center justify-center text-white"
             >
               <FaWhatsapp size={22} />
             </a>

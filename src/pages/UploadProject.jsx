@@ -269,6 +269,18 @@ const UploadProject = () => {
                 Project Image
               </label>
 
+              {/* <input
+                type="file"
+                name="image"
+                accept="image/*"
+                onChange={(e) =>
+                  setFormData({
+                    ...formData,
+                    image: e.target.files[0],
+                  })
+                }
+              /> */}
+
               <input
                 type="file"
                 name="image"
@@ -279,15 +291,8 @@ const UploadProject = () => {
                     image: e.target.files[0],
                   })
                 }
-              />
-
-              {/* <input
-                type="file"
-                name="image"
-                accept="image/*"
-                onChange={handleChange}
                 className="w-full border border-dashed border-orange-300 rounded-xl px-4 py-4 cursor-pointer"
-              /> */}
+              />
             </div>
 
             {/* Submit */}
