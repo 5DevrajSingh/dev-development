@@ -12,8 +12,12 @@ import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Fab } from "@mui/material";
 import DownloadIcon from "@mui/icons-material/Download";
 import { useEffect } from "react";
+import ReactGA from "react-ga4";
+import Analytics from "./components/Analytics";
 import AOS from "aos";
 import "aos/dist/aos.css";
+
+ReactGA.initialize("G-T6V7Q3BEQK");
 function App() {
 
   useEffect(() => {
@@ -35,6 +39,7 @@ const handleDownload = () => {
 };
   return (
     <BrowserRouter>
+     <Analytics />
     <ScrollToTop/>
     <NavBar/>
     < div className="w-full">
