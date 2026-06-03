@@ -3,20 +3,74 @@ import React from 'react'
 const projects = {
   flutter: [
     {
-      title: "Chat Application",
+      title: "UrjaOne Platform",
       description:
-        "Real-time chat app with video sharing, voice messages, and SQLite storage.",
-      tech: ["Flutter", "Provider", "SQLite", "Firebase"],
-      image: "/images/chat-app.png",
+        "A dual-module mobile application consisting of Client and Vendor apps for electricity service management, bill tracking, service requests, complaints, and vendor operations.",
+      tech: ["Flutter", "Firebase", "REST API", "Push Notifications"],
+      image: "/images/urjaone.png",
       demo: "#",
       github: "#",
     },
     {
-      title: "Car Assistant Bot",
+      title: "Bizupon App",
       description:
-        "AI-powered car buying and selling assistant built in Flutter.",
-      tech: ["Flutter", "REST API", "JSON"],
-      image: "/images/car-bot.png",
+        "A digital automotive marketplace and auction platform with vehicle listings, real-time bidding, secure transactions, and integrated chat functionality.",
+      tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
+      image: "/images/bizupon.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "OfficeAssists App",
+      description:
+        "An office productivity application for task management, internal communication, notifications, and team collaboration.",
+      tech: ["Flutter", "Firebase", "REST API"],
+      image: "/images/officeassists.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "TaxinQ App",
+      description:
+        "A law and taxation platform that enables users to search and access new and historical laws with a seamless mobile experience.",
+      tech: ["Flutter", "Firebase", "REST API"],
+      image: "/images/taxinq.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "OnBoard App",
+      description:
+        "A recruitment and HR management platform designed for hiring, onboarding, employee management, and workforce operations.",
+      tech: ["Flutter", "Firebase", "REST API"],
+      image: "/images/onboard.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "IOTtech HRM App",
+      description:
+        "Human Resource Management application for employee tracking, leave management, attendance, and performance monitoring.",
+      tech: ["Flutter", "Firebase", "REST API"],
+      image: "/images/iottech-hrm.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "Rank2Top App",
+      description:
+        "An educational platform providing study materials, practice tests, performance analytics, and exam preparation tools.",
+      tech: ["Flutter", "Firebase", "REST API"],
+      image: "/images/rank2top.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "IotTechChat App",
+      description:
+        "A real-time chat application designed for customer support and team collaboration with instant messaging capabilities.",
+      tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
+      image: "/images/iottech-chat.png",
       demo: "#",
       github: "#",
     },
@@ -24,20 +78,29 @@ const projects = {
 
   web: [
     {
-      title: "Portfolio Website",
+      title: "Developer Portfolio",
       description:
-        "Responsive portfolio website built using React and Tailwind CSS.",
-      tech: ["React", "Tailwind CSS"],
+        "Personal portfolio website showcasing projects, skills, experience, and contact information.",
+      tech: ["React", "Tailwind CSS", "Firebase"],
       image: "/images/portfolio.png",
       demo: "#",
       github: "#",
     },
     {
-      title: "E-Commerce Website",
+      title: "Drymato Website",
       description:
-        "Modern shopping website with cart and payment integration.",
-      tech: ["React", "Node.js", "MongoDB"],
-      image: "/images/ecommerce.png",
+        "Modern product showcase website for dehydrated vegetables with responsive design and engaging user experience.",
+      tech: ["React", "Tailwind CSS", "Firebase"],
+      image: "/images/drymato.png",
+      demo: "#",
+      github: "#",
+    },
+    {
+      title: "PeehuDev Website",
+      description:
+        "Modern product showcase website for dehydrated vegetables with responsive design and engaging user experience.",
+      tech: ["React", "Tailwind CSS", "Firebase"],
+      image: "/images/drymato.png",
       demo: "#",
       github: "#",
     },
