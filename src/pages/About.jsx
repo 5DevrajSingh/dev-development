@@ -15,7 +15,7 @@ import { BsFillBriefcaseFill } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section className="w-full bg-white py-16 lg:py-24 px-5 lg:px-20">
+    <section className="w-full bg-white py-20 lg:py-24 px-5 lg:px-20">
       <div className="max-w-7xl mx-auto">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           {/* Left Side */}

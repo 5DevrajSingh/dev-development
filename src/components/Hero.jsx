@@ -1,5 +1,5 @@
 import hero from "../assets/home2.jpg";
-import profileImage from "../assets/dev3.jpeg"
+import profileImage from "../assets/dev2.png"
 import {  Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 import AOS from "aos";
@@ -23,15 +23,15 @@ function Hero() {
         style={{ backgroundImage: `url(${hero})` }}
       >
         {/* OVERLAY */}
-        <div className="absolute inset-0 bg-black/50 z-10"></div>
+        {/* <div className="absolute inset-0 bg-black/50 z-10"></div> */}
 
         <div
           // className="absolute bottom-24 right-5 md:right-40 z-10"
-          className="absolute bottom-5 right-5 md:right-75 lg:right-75 z-20"
+          className="absolute bottom-5 right-5 md:right-25 lg:right-25 z-10"
           data-aos="zoom-in"
         >
           <div 
-          className="w-35 h-35 md:w-60 md:h-60 rounded-full overflow-hidden  shadow-[0_0_40px_rgba(255,255,255,0.3)]"
+          className="w-35 h-35 md:w-50 md:h-50 rounded-full overflow-hidden  shadow-[0_0_40px_rgba(255,255,255,0.3)]"
           // className="w-35 h-35 md:w-56 md:h-56 rounded-full overflow-hidden border-4 border-white shadow-2xl"
           >
             <img
@@ -63,7 +63,7 @@ function Hero() {
           <button 
           data-aos="slide-right"
           onClick={() => navigate(`/projects`)}
-          className="mt-8 bg-[#616060] hover:bg-[#FF9933] transition-all duration-300 px-8 py-4 rounded-[10px] text-white text-lg">
+          className="mt-8 bg-[#FF9933] hover:bg-[#616060] transition-all duration-300 px-8 py-4 rounded-[10px] text-white text-lg">
             View My Work
           </button>
         </div>

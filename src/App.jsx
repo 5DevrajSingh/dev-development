@@ -59,7 +59,7 @@ const handleDownload = () => {
           onClick={handleDownload}
           sx={{
             position: "fixed",
-            bottom: 10,
+            bottom: 20,
             right: 20,
             backgroundColor: "#FF9933", // भगवा रंग
             color: "#FFFFFF", // सफेद टेक्स्ट और आइकॉन

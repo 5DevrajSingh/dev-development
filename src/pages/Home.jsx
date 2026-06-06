@@ -6,6 +6,8 @@ import Service from './Service'
 // import FutureProduct from './FutureProduct'
 // import WhyChooseUs from './WhyChooseUs'
 import Contact from './Contact'
+import Blogs from './Blogs'
+import FAQ from './FAQ'
 // import WhyDrymato from './WhyDrymato'
 
 function Home() {
@@ -13,6 +15,8 @@ function Home() {
     <div className='w-full'>
       <Hero />
       <Projets/>
+      <Blogs/>
+      <FAQ/>
       <Service/>
        <About/>
       <Contact/>

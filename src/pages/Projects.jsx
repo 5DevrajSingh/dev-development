@@ -1,13 +1,15 @@
 import React from 'react'
-
+import ecommercepage from '../assets/ecommerce_app.png'
+import courierwala from '../assets/courierwala.png'
+import bizupon from '../assets/bizupon.png'
 const projects = {
   flutter: [
     {
-      title: "UrjaOne Platform",
+      title: "CourierWala",
       description:
         "A dual-module mobile application consisting of Client and Vendor apps for electricity service management, bill tracking, service requests, complaints, and vendor operations.",
       tech: ["Flutter", "Firebase", "REST API", "Push Notifications"],
-      image: "/images/urjaone.png",
+      image: courierwala,
       demo: "#",
       github: "#",
     },
@@ -16,7 +18,7 @@ const projects = {
       description:
         "A digital automotive marketplace and auction platform with vehicle listings, real-time bidding, secure transactions, and integrated chat functionality.",
       tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
-      image: "/images/bizupon.png",
+      image: bizupon,
       demo: "#",
       github: "#",
     },
@@ -25,7 +27,7 @@ const projects = {
       description:
         "An office productivity application for task management, internal communication, notifications, and team collaboration.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: "/images/officeassists.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -34,7 +36,7 @@ const projects = {
       description:
         "A law and taxation platform that enables users to search and access new and historical laws with a seamless mobile experience.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: "/images/taxinq.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -43,7 +45,7 @@ const projects = {
       description:
         "A recruitment and HR management platform designed for hiring, onboarding, employee management, and workforce operations.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: "/images/onboard.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -52,7 +54,7 @@ const projects = {
       description:
         "Human Resource Management application for employee tracking, leave management, attendance, and performance monitoring.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: "/images/iottech-hrm.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -61,7 +63,7 @@ const projects = {
       description:
         "An educational platform providing study materials, practice tests, performance analytics, and exam preparation tools.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: "/images/rank2top.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -70,7 +72,7 @@ const projects = {
       description:
         "A real-time chat application designed for customer support and team collaboration with instant messaging capabilities.",
       tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
-      image: "/images/iottech-chat.png",
+      image: ecommercepage,
       demo: "#",
       github: "#",
     },
@@ -111,7 +113,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full bg-white py-16 lg:py-24 px-5 lg:px-20"
+      className="w-full bg-white py-20 lg:py-24 px-5 lg:px-20"
     >
       <div className="max-w-7xl mx-auto">
         <h2 className="text-4xl font-bold text-[#fa8816] text-center mb-4">
