@@ -2,6 +2,9 @@ import React from 'react'
 import ecommercepage from '../assets/ecommerce_app.png'
 import courierwala from '../assets/courierwala.png'
 import bizupon from '../assets/bizupon.png'
+import iotBazar from '../assets/iottechBazar.png'
+import LgSchool from '../assets/lgGlobal.png'
+import offissist from '../assets/offissist.png'
 const projects = {
   flutter: [
     {
@@ -27,7 +30,7 @@ const projects = {
       description:
         "An office productivity application for task management, internal communication, notifications, and team collaboration.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: ecommercepage,
+      image: offissist,
       demo: "#",
       github: "#",
     },
@@ -36,7 +39,7 @@ const projects = {
       description:
         "A law and taxation platform that enables users to search and access new and historical laws with a seamless mobile experience.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: ecommercepage,
+      image: offissist,
       demo: "#",
       github: "#",
     },
@@ -45,7 +48,7 @@ const projects = {
       description:
         "A recruitment and HR management platform designed for hiring, onboarding, employee management, and workforce operations.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: ecommercepage,
+      image: LgSchool,
       demo: "#",
       github: "#",
     },
@@ -54,7 +57,7 @@ const projects = {
       description:
         "Human Resource Management application for employee tracking, leave management, attendance, and performance monitoring.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: ecommercepage,
+      image: LgSchool,
       demo: "#",
       github: "#",
     },
@@ -63,7 +66,7 @@ const projects = {
       description:
         "An educational platform providing study materials, practice tests, performance analytics, and exam preparation tools.",
       tech: ["Flutter", "Firebase", "REST API"],
-      image: ecommercepage,
+      image: iotBazar,
       demo: "#",
       github: "#",
     },
