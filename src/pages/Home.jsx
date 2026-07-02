@@ -15,8 +15,7 @@ function Home() {
     <div className='w-full'>
       <Hero />
       <Projets/>
-      <Blogs/>
-      <FAQ/>
+
       <Service/>
        <About/>
       <Contact/>

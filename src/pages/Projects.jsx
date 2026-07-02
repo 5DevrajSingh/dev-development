@@ -1,3 +1,4 @@
+
 import React from 'react'
 import ecommercepage from '../assets/ecommerce_app.png'
 import courierwala from '../assets/courierwala.png'
@@ -5,6 +6,8 @@ import bizupon from '../assets/bizupon.png'
 import iotBazar from '../assets/iottechBazar.png'
 import LgSchool from '../assets/lgGlobal.png'
 import offissist from '../assets/offissist.png'
+
+
 const projects = {
   flutter: [
     {
@@ -22,7 +25,9 @@ const projects = {
         "A digital automotive marketplace and auction platform with vehicle listings, real-time bidding, secure transactions, and integrated chat functionality.",
       tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
       image: bizupon,
-      demo: "#",
+
+      demo: "https://play.google.com/store/search?q=bizupon&c=apps&hl=en_IN",
+
       github: "#",
     },
     {
@@ -31,7 +36,9 @@ const projects = {
         "An office productivity application for task management, internal communication, notifications, and team collaboration.",
       tech: ["Flutter", "Firebase", "REST API"],
       image: offissist,
-      demo: "#",
+  
+      image: ecommercepage,
+      demo: "https://play.google.com/store/apps/details?id=com.iottech.incidentmanagement&hl=en_IN",
       github: "#",
     },
     {
@@ -40,25 +47,33 @@ const projects = {
         "A law and taxation platform that enables users to search and access new and historical laws with a seamless mobile experience.",
       tech: ["Flutter", "Firebase", "REST API"],
       image: offissist,
-      demo: "#",
+      
+      image: ecommercepage,
+      demo: "https://play.google.com/store/apps/details?id=com.iottechsmart.taxinq&hl=en_IN",
       github: "#",
     },
     {
-      title: "OnBoard App",
+      title: "RankAssist",
       description:
         "A recruitment and HR management platform designed for hiring, onboarding, employee management, and workforce operations.",
       tech: ["Flutter", "Firebase", "REST API"],
+
       image: LgSchool,
-      demo: "#",
+     
+      image: ecommercepage,
+      demo: "https://play.google.com/store/apps/details?id=com.iottechedu.iottechbook&hl=en_IN",
       github: "#",
     },
     {
-      title: "IOTtech HRM App",
+      title: "Iottech Bazar App",
       description:
         "Human Resource Management application for employee tracking, leave management, attendance, and performance monitoring.",
       tech: ["Flutter", "Firebase", "REST API"],
+
       image: LgSchool,
-      demo: "#",
+     
+      image: ecommercepage,
+      demo: "https://play.google.com/store/apps/details?id=com.iottech.iottechbazar&hl=en_IN",
       github: "#",
     },
     {
@@ -66,17 +81,22 @@ const projects = {
       description:
         "An educational platform providing study materials, practice tests, performance analytics, and exam preparation tools.",
       tech: ["Flutter", "Firebase", "REST API"],
+
       image: iotBazar,
-      demo: "#",
+      
+      image: ecommercepage,
+      demo: "https://play.google.com/store/apps/details?id=com.iottech.rank2top_ed&hl=en_IN",
       github: "#",
     },
     {
-      title: "IotTechChat App",
+      title: "Bharathaila App",
       description:
         "A real-time chat application designed for customer support and team collaboration with instant messaging capabilities.",
       tech: ["Flutter", "Firebase", "REST API", "Real-time Chat"],
       image: ecommercepage,
-      demo: "#",
+
+      demo: "https://play.google.com/store/apps/details?id=com.iottech.bharathaila&hl=en_IN",
+
       github: "#",
     },
   ],
@@ -88,7 +108,7 @@ const projects = {
         "Personal portfolio website showcasing projects, skills, experience, and contact information.",
       tech: ["React", "Tailwind CSS", "Firebase"],
       image: "/images/portfolio.png",
-      demo: "#",
+      demo: "https://dev-development.vercel.app/",
       github: "#",
     },
     {
@@ -97,7 +117,7 @@ const projects = {
         "Modern product showcase website for dehydrated vegetables with responsive design and engaging user experience.",
       tech: ["React", "Tailwind CSS", "Firebase"],
       image: "/images/drymato.png",
-      demo: "#",
+      demo: "https://drymato.vercel.app/",
       github: "#",
     },
     {
@@ -106,7 +126,7 @@ const projects = {
         "Modern product showcase website for dehydrated vegetables with responsive design and engaging user experience.",
       tech: ["React", "Tailwind CSS", "Firebase"],
       image: "/images/drymato.png",
-      demo: "#",
+      demo: "https://peehudev.vercel.app/",
       github: "#",
     },
   ],
@@ -145,13 +165,9 @@ const Projects = () => {
               />
 
               <div className="p-6">
-                <h4 className="text-xl font-bold mb-3">
-                  {project.title}
-                </h4>
+                <h4 className="text-xl font-bold mb-3">{project.title}</h4>
 
-                <p className="text-gray-600 mb-4">
-                  {project.description}
-                </p>
+                <p className="text-gray-600 mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tech.map((tech, i) => (
@@ -167,6 +183,8 @@ const Projects = () => {
                 <div className="flex gap-4">
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[#FF9933] text-white px-4 py-2 rounded"
                   >
                     Live Demo
@@ -174,6 +192,8 @@ const Projects = () => {
 
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-gray-300 px-4 py-2 rounded"
                   >
                     GitHub
@@ -185,9 +205,7 @@ const Projects = () => {
         </div>
 
         {/* Web Projects */}
-        <h3 className="text-2xl font-bold mb-8 text-[#FF9933]">
-          Web Projects
-        </h3>
+        <h3 className="text-2xl font-bold mb-8 text-[#FF9933]">Web Projects</h3>
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.web.map((project, index) => (
@@ -202,13 +220,9 @@ const Projects = () => {
               />
 
               <div className="p-6">
-                <h4 className="text-xl font-bold mb-3">
-                  {project.title}
-                </h4>
+                <h4 className="text-xl font-bold mb-3">{project.title}</h4>
 
-                <p className="text-gray-600 mb-4">
-                  {project.description}
-                </p>
+                <p className="text-gray-600 mb-4">{project.description}</p>
 
                 <div className="flex flex-wrap gap-2 mb-5">
                   {project.tech.map((tech, i) => (
@@ -221,9 +235,11 @@ const Projects = () => {
                   ))}
                 </div>
 
-                <div className="flex gap-4">
+                 <div className="flex gap-4">
                   <a
                     href={project.demo}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="bg-[#FF9933] text-white px-4 py-2 rounded"
                   >
                     Live Demo
@@ -231,6 +247,8 @@ const Projects = () => {
 
                   <a
                     href={project.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="border border-gray-300 px-4 py-2 rounded"
                   >
                     GitHub

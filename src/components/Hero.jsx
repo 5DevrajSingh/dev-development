@@ -1,4 +1,5 @@
-import hero from "../assets/home2.jpg";
+
+import hero from "../assets/hero4.jpg";
 import profileImage from "../assets/dev2.png"
 import {  Link, useNavigate } from "react-router-dom";
 import { useEffect } from "react";
@@ -23,7 +24,7 @@ function Hero() {
         style={{ backgroundImage: `url(${hero})` }}
       >
         {/* OVERLAY */}
-        {/* <div className="absolute inset-0 bg-black/50 z-10"></div> */}
+        <div className="absolute inset-0 bg-black/50 z-10"></div>
 
         <div
           // className="absolute bottom-24 right-5 md:right-40 z-10"

@@ -17,6 +17,8 @@ import ReactGA from "react-ga4";
 import Analytics from "./components/Analytics";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import FAQ from "./pages/FAQ"
+import Blogs from "./pages/Blogs"
 
 ReactGA.initialize("G-T6V7Q3BEQK");
 function App() {
@@ -28,12 +30,13 @@ function App() {
       });
      }, []);
   
+    
 const handleDownload = () => {
-  const fileUrl = `${import.meta.env.BASE_URL}Devraj-Resume.pdf`;
+  const fileUrl = `${import.meta.env.BASE_URL}Resume.pdf`;
 
   const link = document.createElement("a");
   link.href = fileUrl;
-  link.download = "Devraj-Resume.pdf";
+  link.download = "Devraj Singh.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -51,6 +54,8 @@ const handleDownload = () => {
       <Route path="/about" element={<About/>}/>
       <Route path="/contact" element={<Contact/>}/>
       <Route path="/upload-project" element={<UploadProject/>}/>
+      <Route path="/faq" element={<FAQ/>}/>
+      <Route path="/blogs" element={<Blogs/>}/>
     </Routes>
     <Fab
           data-aos="fade-up-left"
